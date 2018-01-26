@@ -27,6 +27,12 @@ const Header = () => (
           className="Header-navigation-item"
           activeClassName="Header-navigation-item--isActive"
         >Counter Example</NavLink>
+        <NavLink
+          exact
+          to="/animation"
+          className="Header-navigation-item"
+          activeClassName="Header-navigation-item--isActive"
+        >Animation Example</NavLink>
       </nav>
     </Container>
   </div>

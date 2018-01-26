@@ -65,6 +65,7 @@
     "stylelint": "^8.4.0",
     "stylelint-scss": "^2.2.0",
     "stylelint-webpack-plugin": "^0.10.1",
+    "vivus": "^0.4.3",
     "webpack": "^2.3.3",
     "webpack-dev-server": "^2.4.2",
     "webpack-merge": "^4.1.0"
