@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-// import Vivus from 'vivus';
+import Vivus from 'vivus';
 
 class AnimationContainer extends Component {
   componentDidMount() {
-    import('Vivus').then(Vivus => {
-      new Vivus('ax', { duration: 200, file: '/img/az.svg' });
-    });
+    new Vivus('ax', { duration: 200, file: '/img/az.svg' });
   }
   render() {
     return (

@@ -1,11 +1,26 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import HomeView from 'views/HomeView.jsx';
-import CounterView from 'views/CounterView.jsx';
-import AnimationView from 'views/AnimationView.jsx';
 import Header from 'components/Header/Header.jsx';
 import Main from 'components/Main/Main.jsx';
 import Footer from 'components/Footer/Footer.jsx';
+import Loadable from 'react-loadable';
+
+const Loading = () => <div>Loading...</div>;
+
+const HomeView = Loadable({
+  loader: () => import('views/HomeView.jsx'),
+  loading: Loading
+});
+
+const CounterView = Loadable({
+  loader: () => import('views/CounterView.jsx'),
+  loading: Loading
+});
+
+const AnimationView = Loadable({
+  loader: () => import('views/AnimationView.jsx'),
+  loading: Loading
+});
 
 function AppView() {
   return (
